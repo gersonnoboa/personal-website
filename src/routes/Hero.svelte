@@ -1,7 +1,7 @@
 <div class="hero min-h-screen bg-gradient-to-r from-primary to-secondary">
 	<div class="hero-overlay bg-opacity-50" />
 	<div class="hero-content text-center text-primary-content">
-		<div class="max-w-md lg:max-w-">
+		<div class="max-w-md lg:max-w-xl">
 			<h1 class="mb-5 text-5xl font-bold">Hello! I'm Gerson Noboa.</h1>
 			<p class="mb-5">
 				Software engineer with years of experience across multiple platforms and tech stacks. Mainly

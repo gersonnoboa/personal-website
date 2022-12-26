@@ -1,6 +1,6 @@
 <div class="education bg-base-200 personal-website-section">
 	<p class="text-3xl text-center">Education</p>
-	<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+	<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
 		<div class="card shadow-xl bg-neutral basis-1/4 break-word">
 			<div class="card-body">
 				<h2 class="card-title">University of Tartu</h2>

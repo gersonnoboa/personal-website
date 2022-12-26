@@ -4,6 +4,6 @@
 
 @layer components {
 	.personal-website-section {
-		@apply grid gap-12 px-12 py-16 lg:px-[10%] 2xl:px-[20%];
+		@apply grid gap-12 px-8 py-16 lg:px-[10%] 2xl:px-[20%];
 	}
 }

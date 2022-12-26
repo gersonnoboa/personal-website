@@ -1,5 +1,5 @@
 <div
-	class="personal-information grid-cols-1 md:grid-cols-2 lg:grid-cols-4 personal-website-section"
+	class="personal-information grid-cols-1 md:grid-cols-2 lg:grid-cols-4 personal-website-section gap-12"
 >
 	<div class="card shadow-xl bg-neutral break-all">
 		<div class="card-body">

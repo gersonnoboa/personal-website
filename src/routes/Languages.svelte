@@ -1,6 +1,6 @@
 <div class="languages bg-base-100 personal-website-section">
 	<p class="text-3xl text-center">Languages</p>
-	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
 		<div class="card shadow-xl bg-neutral">
 			<div class="card-body">
 				<h2 class="card-title">Spanish</h2>
