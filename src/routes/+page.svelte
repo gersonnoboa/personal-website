@@ -9,17 +9,9 @@
 </script>
 
 <Hero />
-<div class="flex flex-row">
-	<div class="basis-1/12 lg:basis-1/5" />
-	<div class="basis-10/12 lg:basis-3/5 space-y-10">
-		<div />
-		<PersonalInformation />
-		<Experience />
-		<Skills />
-		<Education />
-		<Languages />
-		<RandomFacts />
-		<div />
-	</div>
-	<div class="basis-1/12 lg:basis-1/5" />
-</div>
+<PersonalInformation />
+<Experience />
+<Skills />
+<Education />
+<Languages />
+<RandomFacts />

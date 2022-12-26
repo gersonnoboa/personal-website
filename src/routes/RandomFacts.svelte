@@ -2,8 +2,8 @@
 	import RandomFact from './RandomFact.svelte';
 </script>
 
-<p class="text-2xl">Random Facts</p>
-<div class="experience">
+<div class="random-facts bg-base-200 personal-website-section">
+	<p class="text-3xl text-center">Random Facts</p>
 	<div class="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
 		<RandomFact title="Years of experience" value="9" />
 		<RandomFact title="GitHub Repos" value="51" />

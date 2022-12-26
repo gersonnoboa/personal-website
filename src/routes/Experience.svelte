@@ -2,8 +2,8 @@
 	import ExperienceCard from './ExperienceCard.svelte';
 </script>
 
-<div class="experience space-y-5">
-	<p class="text-2xl">Recent Experience</p>
+<div class="experience bg-base-200 personal-website-section gap-8">
+	<p class="text-3xl text-center">Recent Experience</p>
 	<ExperienceCard
 		title="Glia · Senior Software Engineer"
 		period="July 2020 - Present"

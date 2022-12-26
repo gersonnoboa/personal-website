@@ -1,4 +1,6 @@
-<div class="personal-information grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+<div
+	class="personal-information grid-cols-1 md:grid-cols-2 lg:grid-cols-4 personal-website-section"
+>
 	<div class="card shadow-xl bg-neutral break-all">
 		<div class="card-body">
 			<h2 class="card-title">Email</h2>
