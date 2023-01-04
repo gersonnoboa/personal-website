@@ -25,7 +25,7 @@
 	<div class="card shadow-xl bg-neutral">
 		<div class="card-body">
 			<h2 class="card-title">Living in</h2>
-			<p>Talinn, Estonia</p>
+			<p>Tallinn, Estonia</p>
 		</div>
 	</div>
 </div>
