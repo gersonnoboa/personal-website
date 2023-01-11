@@ -1,63 +1,73 @@
 <script>
+	import RootSection from './RootSection.svelte';
 	import SkillBadge from './SkillBadge.svelte';
+	let mobileSkills = [
+		'Swift',
+		'Objective-C',
+		'Java',
+		'Objective-C',
+		'SDK Development',
+		'WebSockets',
+		'Push Notifications',
+		'Audio Streaming',
+		'Video Streaming',
+		'App Store Publishing',
+		'Core Data',
+		'Cocoapods',
+		'Swift Package Manager',
+		'WebRTC',
+		'Bitrise',
+		'SQLite'
+	];
+
+	let webSkills = [
+		'JavaScript',
+		'TypeScript',
+		'Ruby',
+		'Python',
+		'Elixir',
+		'Java',
+		'Rails',
+		'Django',
+		'Elixir',
+		'NodeJS',
+		'Express',
+		'AWS',
+		'Postgres',
+		'SQL Server',
+		'MongoDB'
+	];
+
+	let otherSkills = ['Bash', 'GitHub', 'Linux', 'Content Writing', 'WordPress'];
 </script>
 
-<div class="skills personal-website-section">
+<RootSection additionalClasses="bg-base-100">
 	<p class="text-4xl text-center">Skills</p>
 
 	<div>
 		<p class="text-lg">Mobile</p>
 		<div>
-			<SkillBadge name="Swift" />
-			<SkillBadge name="Objective-C" />
-			<SkillBadge name="Java" />
-			<SkillBadge name="Objective-C" />
-			<SkillBadge name="SDK Development" />
-			<SkillBadge name="WebSockets" />
-			<SkillBadge name="Push Notifications" />
-			<SkillBadge name="Audio Streaming" />
-			<SkillBadge name="Video Streaming" />
-			<SkillBadge name="App Store Publishing" />
-			<SkillBadge name="Core Data" />
-			<SkillBadge name="Cocoapods" />
-			<SkillBadge name="Swift Package Manager" />
-			<SkillBadge name="WebRTC" />
-			<SkillBadge name="Bitrise" />
-			<SkillBadge name="SQLite" />
+			{#each mobileSkills as mobileSkill}
+				<SkillBadge name={mobileSkill} />
+			{/each}
 		</div>
 	</div>
 
 	<div>
 		<p class="text-lg">Web</p>
-
 		<div>
-			<SkillBadge name="JavaScript" />
-			<SkillBadge name="TypeScript" />
-			<SkillBadge name="Ruby" />
-			<SkillBadge name="Python" />
-			<SkillBadge name="Elixir" />
-			<SkillBadge name="Java" />
-			<SkillBadge name="Rails" />
-			<SkillBadge name="Django" />
-			<SkillBadge name="Elixir" />
-			<SkillBadge name="NodeJS" />
-			<SkillBadge name="Express" />
-			<SkillBadge name="AWS" />
-			<SkillBadge name="Postgres" />
-			<SkillBadge name="SQL Server" />
-			<SkillBadge name="MongoDB" />
+			{#each webSkills as webSkill}
+				<SkillBadge name={webSkill} />
+			{/each}
 		</div>
 	</div>
 
 	<div>
 		<p class="text-lg">General</p>
-
 		<div>
-			<SkillBadge name="Bash" />
-			<SkillBadge name="GitHub" />
-			<SkillBadge name="Linux" />
-			<SkillBadge name="Content Writing" />
-			<SkillBadge name="WordPress" />
+			{#each otherSkills as otherSkill}
+				<SkillBadge name={otherSkill} />
+			{/each}
 		</div>
 	</div>
-</div>
+</RootSection>

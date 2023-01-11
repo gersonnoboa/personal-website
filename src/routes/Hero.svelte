@@ -1,3 +1,16 @@
+<script>
+	let buttons = [
+		{
+			href: 'https://www.github.com/gersonnoboa',
+			title: 'GitHub'
+		},
+		{
+			href: 'https://www.linkedin.com/in/gersonnoboa',
+			title: 'LinkedIn'
+		}
+	];
+</script>
+
 <div class="hero min-h-screen bg-gradient-to-r from-primary to-secondary">
 	<div class="hero-overlay bg-opacity-50" />
 	<div class="hero-content text-center text-primary-content">
@@ -9,18 +22,11 @@
 				Currently working as a mobile engineer for Glia, primarily on our iOS offerings.
 			</p>
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-				<a
-					class="btn btn-primary"
-					href="https://www.github.com/gersonnoboa"
-					target="_blank"
-					rel="noreferrer">GitHub</a
-				>
-				<a
-					class="btn btn-primary"
-					href="https://www.linkedin.com/in/gersonnoboa"
-					target="_blank"
-					rel="noreferrer">LinkedIn</a
-				>
+				{#each buttons as button}
+					<a class="btn btn-primary" href={button.href} target="_blank" rel="noreferrer"
+						>{button.title}</a
+					>
+				{/each}
 			</div>
 		</div>
 	</div>

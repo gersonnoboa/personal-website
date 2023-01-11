@@ -1,36 +1,40 @@
-<div class="languages bg-base-100 personal-website-section">
+<script>
+	import RootSection from './RootSection.svelte';
+	let languages = [
+		{
+			name: 'Spanish',
+			proficiency: 'Full professional proficiency',
+			level: 'Native'
+		},
+		{
+			name: 'English',
+			proficiency: 'Full professional proficiency',
+			level: 'TOEFL score 112/120'
+		},
+		{
+			name: 'Estonian',
+			proficiency: 'Limited working proficiency',
+			level: 'B1 level'
+		},
+		{
+			name: 'German',
+			proficiency: 'Elementary proficiency',
+			level: 'A1 level'
+		}
+	];
+</script>
+
+<RootSection additionalClasses="bg-base-100">
 	<p class="text-3xl text-center">Languages</p>
 	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-		<div class="card shadow-xl bg-neutral">
-			<div class="card-body">
-				<h2 class="card-title">Spanish</h2>
-				<p>Full professional proficiency</p>
-				<p>Native</p>
+		{#each languages as language}
+			<div class="card shadow-xl bg-neutral">
+				<div class="card-body">
+					<h2 class="card-title">{language.name}</h2>
+					<p>{language.proficiency}</p>
+					<p>{language.level}</p>
+				</div>
 			</div>
-		</div>
-
-		<div class="card shadow-xl bg-neutral">
-			<div class="card-body">
-				<h2 class="card-title">English</h2>
-				<p>Full professional proficiency</p>
-				<p>TOEFL score 112/120</p>
-			</div>
-		</div>
-
-		<div class="card shadow-xl bg-neutral">
-			<div class="card-body">
-				<h2 class="card-title">Estonian</h2>
-				<p>Limited working proficiency</p>
-				<p>B1 level</p>
-			</div>
-		</div>
-
-		<div class="card shadow-xl bg-neutral">
-			<div class="card-body">
-				<h2 class="card-title">German</h2>
-				<p>Elementary proficiency</p>
-				<p>A1 level</p>
-			</div>
-		</div>
+		{/each}
 	</div>
-</div>
+</RootSection>
