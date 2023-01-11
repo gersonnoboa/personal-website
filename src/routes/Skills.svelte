@@ -1,73 +1,66 @@
 <script>
 	import RootSection from './RootSection.svelte';
 	import SkillBadge from './SkillBadge.svelte';
-	let mobileSkills = [
-		'Swift',
-		'Objective-C',
-		'Java',
-		'Objective-C',
-		'SDK Development',
-		'WebSockets',
-		'Push Notifications',
-		'Audio Streaming',
-		'Video Streaming',
-		'App Store Publishing',
-		'Core Data',
-		'Cocoapods',
-		'Swift Package Manager',
-		'WebRTC',
-		'Bitrise',
-		'SQLite'
+	let skillCategories = [
+		{
+			title: 'Mobile',
+			skills: [
+				'Swift',
+				'Objective-C',
+				'Java',
+				'Objective-C',
+				'SDK Development',
+				'WebSockets',
+				'Push Notifications',
+				'Audio Streaming',
+				'Video Streaming',
+				'App Store Publishing',
+				'Core Data',
+				'Cocoapods',
+				'Swift Package Manager',
+				'WebRTC',
+				'Bitrise',
+				'SQLite'
+			]
+		},
+		{
+			title: 'Web',
+			skills: [
+				'JavaScript',
+				'TypeScript',
+				'Ruby',
+				'Python',
+				'Elixir',
+				'Java',
+				'Rails',
+				'Django',
+				'Elixir',
+				'NodeJS',
+				'Express',
+				'AWS',
+				'Postgres',
+				'SQL Server',
+				'MongoDB'
+			]
+		},
+		{
+			title: 'General',
+			skills: ['Bash', 'GitHub', 'Linux', 'Content Writing', 'WordPress']
+		}
 	];
-
-	let webSkills = [
-		'JavaScript',
-		'TypeScript',
-		'Ruby',
-		'Python',
-		'Elixir',
-		'Java',
-		'Rails',
-		'Django',
-		'Elixir',
-		'NodeJS',
-		'Express',
-		'AWS',
-		'Postgres',
-		'SQL Server',
-		'MongoDB'
-	];
-
-	let otherSkills = ['Bash', 'GitHub', 'Linux', 'Content Writing', 'WordPress'];
 </script>
 
 <RootSection additionalClasses="bg-base-100">
 	<p class="text-4xl text-center">Skills</p>
 
-	<div>
-		<p class="text-lg">Mobile</p>
+	{#each skillCategories as skillCategory}
 		<div>
-			{#each mobileSkills as mobileSkill}
-				<SkillBadge name={mobileSkill} />
-			{/each}
+			<p class="text-lg">{skillCategory.title}</p>
+			<div>
+				{#each skillCategory.skills as skill}
+					<SkillBadge name={skill} />
+				{/each}
+			</div>
 		</div>
-	</div>
-
-	<div>
-		<p class="text-lg">Web</p>
-		<div>
-			{#each webSkills as webSkill}
-				<SkillBadge name={webSkill} />
-			{/each}
-		</div>
-	</div>
-
-	<div>
-		<p class="text-lg">General</p>
-		<div>
-			{#each otherSkills as otherSkill}
-				<SkillBadge name={otherSkill} />
-			{/each}
-		</div>
-	</div>
+	{/each}
 </RootSection>
