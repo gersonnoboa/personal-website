@@ -44,7 +44,7 @@
 
 <RootSection additionalClasses="bg-base-200">
 	<p class="text-3xl text-center">Random Facts</p>
-	<div class="grid md:grid-cols-2 xl:grid-cols-3 gap-12">
+	<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
 		{#each facts as fact}
 			<RandomFact {...fact} />
 		{/each}
