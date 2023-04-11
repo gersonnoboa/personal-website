@@ -1,6 +1,7 @@
 export type RemoteArtist = {
 	name: string,
-	id: string
+	id: string,
+	image_url: string
 }
 
 export type RemoteAct = {
@@ -20,6 +21,7 @@ export type RemoteCountry = {
 }
 
 export type RemoteConcert = {
+	id: number,
 	start_date: string,
 	act_set: RemoteAct[],
 	venue: RemoteVenue

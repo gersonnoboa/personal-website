@@ -8,6 +8,7 @@ export default class ConcertConverter {
 			const venue = ConcertConverter.formattedVenue(element.venue);
 
 			const concert: Concert = {
+				id: element.id,
 				startDate: startDate,
 				mainAct: acts[0],
 				supportActs: acts[1],
@@ -28,11 +29,16 @@ export default class ConcertConverter {
 	}
 
 	private static formattedActs(act_set: RemoteAct[]): [Act, Act[]] {
-		let mainAct: Act = { name: "", setlistUrl: "" };
-		let supportActs: Act[] = [];
+		let mainAct: Act = { name: "", setlistUrl: "", imageUrl: "" };
+		const supportActs: Act[] = [];
 
 		act_set.forEach(act => {
-			let actObject = { name: act.artist.name, setlistUrl: act.setlist_url };
+			const actObject = {
+				name: act.artist.name,
+				setlistUrl: act.setlist_url,
+				imageUrl: act.artist.image_url
+			};
+
 			if (act.is_main) {
 				mainAct = actObject
 			} else {
@@ -54,6 +60,7 @@ export default class ConcertConverter {
 type Act = {
 	name: string,
 	setlistUrl: string
+	imageUrl: string
 }
 
 type Venue = {
@@ -62,6 +69,7 @@ type Venue = {
 }
 
 type Concert = {
+	id: number,
 	startDate: string,
 	mainAct: Act,
 	supportActs: Act[],

@@ -11,10 +11,12 @@
 	{#if concerts && concerts.length > 0}
 		{#each concerts as concert}
 			<Concert
+				id={concert.id}
 				artist={concert.mainAct.name}
 				date={concert.startDate}
 				country={concert.venue.countryName}
 				venue={concert.venue.name}
+				imageUrl={concert.mainAct.imageUrl}
 			/>
 		{/each}
 	{:else}
