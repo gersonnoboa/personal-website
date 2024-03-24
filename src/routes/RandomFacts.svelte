@@ -5,11 +5,11 @@
 	let facts = [
 		{
 			title: 'Years of experience',
-			value: '9'
+			value: '10'
 		},
 		{
 			title: 'GitHub Repos',
-			value: '52'
+			value: '63'
 		},
 		{
 			title: 'Programming languages used',
@@ -37,7 +37,7 @@
 		},
 		{
 			title: 'Liked songs in Spotify',
-			value: '2000+'
+			value: '2200+'
 		}
 	];
 </script>

@@ -7,12 +7,12 @@
 			subtitle: 'Contact me!',
 			type: 'email',
 			additionalInfo: {
-				main: 'mailto:gerson.noboa@outlook.com'
+				main: 'mailto:gerson@noboa.dev'
 			}
 		},
 		{
 			title: 'Age',
-			subtitle: '31 years old',
+			subtitle: '32 years old',
 			type: 'string'
 		},
 		{
